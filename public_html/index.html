@@ -10,29 +10,37 @@
     <body>
         <h1 id="title">Форма опроса</h1>        
         <form id="survey-form">
-            <div></div>
-            <div></div>
             <p id="description">Дайте нам знать, как мы можем улучшить freeCodeCamp</p>
-            <label for="name" id="name-label">*Имя: </label>            
+            <div>
+                <label for="name" id="name-label">*Имя: </label>
                 <input id="name" type="text" required placeholder="Введите ваше имя">
-            <label for="email" id="email-label">*E-mail: </label>
-            <input id="email" type="email" required placeholder="Введите вашу электронную почту">
-            <label for="number" id="number-label">*Возраст: </label>
+            </div>
+            <div>
+                <label for="email" id="email-label">*E-mail: </label>
+                <input id="email" type="email" required placeholder="Введите вашу электронную почту">
+            </div>
+            <div>
+                <label for="number" id="number-label">*Возраст: </label>
                 <input id="number" type="number" required min="1" max="100" placeholder="1">
-
-            <label>Какой вариант лучше всего описывает вашу текущую роль?</label>
-            <select id="dropdown" name="role">
-                <option>Студент</option>
-                <option>Работающий полный рабочий день</option>
-                <option>Учащийся полный рабочий день</option>
-                <option>Не желаю отвечать</option>
-                <option>Другое</option>
-            </select>
+            </div>
+            <div><label>Какой вариант лучше всего описывает вашу текущую роль?</label>
+                <select id="dropdown" name="role">
+                    <option>Студент</option>
+                    <option>Работающий полный рабочий день</option>
+                    <option>Учащийся полный рабочий день</option>
+                    <option>Не желаю отвечать</option>
+                    <option>Другое</option>
+                </select>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
 
             <label>* Какова вероятность того, что вы порекомендуете freeCodeCamp другу?</label>       
-                <label><input type="radio" name="recomFrend" value="1">Definitely</label>
-            <label><input type="radio" name="recomFrend" value="2">Maybe</label>
-            <label><input type="radio" name="recomFrend" value="3">Not sure</label>
+            <input type="radio" name="recomFrend" value="1">Definitely
+            <input type="radio" name="recomFrend" value="2">Maybe
+            <input type="radio" name="recomFrend" value="3">Not sure
 
             <label>Что вам больше всего нравится в FCC:</label>
             <select id="dropdown-like" name="like">
@@ -44,7 +52,7 @@
 
             <label>Вещи, которые должны быть улучшены в будущем<br>
                 (Отметьте все подходящие варианты):</label>
-                <label><input type="checkbox" value="1">Фронтенд проекты</label>
+            <label><input type="checkbox" value="1">Фронтенд проекты</label>
             <label><input type="checkbox" value="2">Бэкенд проекты</label>
             <label><input type="checkbox" value="3">Визуализация данных</label>
             <label><input type="checkbox" value="4">Задания</label>
@@ -56,7 +64,7 @@
             <label><input type="checkbox" value="11">Дополнительные курсы</label>
 
             <label>Комментарии или предложения:</label>
-                <textarea name="comment" placeholder="Введите текст здесь..."></textarea>
+            <textarea name="comment" placeholder="Введите текст здесь..."></textarea>
 
             <input type="submit" id="submit" value="Отправить">
         </form>
