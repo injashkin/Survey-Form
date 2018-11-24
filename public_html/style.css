@@ -30,10 +30,23 @@ form {
     padding: 10px 0; 
 }
 
-label {    
-    
+.left {    
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    vertical-align: top;
+}
+
+.right {
+    display: inline-block;
+    text-align: left;
+    width: 45%;
 }
 
 p {
-    
+
+}
+
+#dropdown {
+    width: 100%;
 }

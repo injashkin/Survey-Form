@@ -10,63 +10,105 @@
     <body>
         <h1 id="title">Форма опроса</h1>        
         <form id="survey-form">
-            <p id="description">Дайте нам знать, как мы можем улучшить freeCodeCamp</p>
+            <p id="description">Заполните анкету</p>
             <div>
-                <label for="name" id="name-label">*Имя: </label>
-                <input id="name" type="text" required placeholder="Введите ваше имя">
+                <div class="left">
+                    <label for="name" id="name-label">*Имя: </label>
+                </div>
+                <div class="right">
+                    <input id="name" type="text" required placeholder="Введите ваше имя">
+                </div>
             </div>
             <div>
-                <label for="email" id="email-label">*E-mail: </label>
-                <input id="email" type="email" required placeholder="Введите вашу электронную почту">
+                <div class="left">
+                    <label for="email" id="email-label">*E-mail: </label>
+                </div>
+                <div class="right">
+                    <input id="email" type="email" required placeholder="Введите вашу электронную почту">
+                </div>
             </div>
             <div>
-                <label for="number" id="number-label">*Возраст: </label>
-                <input id="number" type="number" required min="1" max="100" placeholder="1">
+                <div class="left">
+                    <label for="number" id="number-label">*Возраст: </label>
+                </div>
+                <div class="right">
+                <input id="number" type="number" required min="1" max="140" placeholder="1">
+                </div>
             </div>
-            <div><label>Какой вариант лучше всего описывает вашу текущую роль?</label>
+            <div>
+                <div class="left">
+                    <label>* Пол</label>    
+                </div>
+                <div class="right">
+                <input type="radio" name="gender" value="1">Мужской
+                <input type="radio" name="gender" value="2">Женский
+                </div>
+            </div>
+            <div>
+                <div class="left">                
+                    <label>Физическая активность (выберите из приведенного списка номер вашей группы): </label>
+                </div>
+                <div class="right">
                 <select id="dropdown" name="role">
-                    <option>Студент</option>
-                    <option>Работающий полный рабочий день</option>
-                    <option>Учащийся полный рабочий день</option>
-                    <option>Не желаю отвечать</option>
-                    <option>Другое</option>
+                    <option>I группа (очень низкая физическая активность) работники преимущественно умственного труда, физические нагрузки отсутствуют</option>
+                    <option>II группа (низкая физическая активность), работники занятые легким трудом или тренировки 1-2 раза в неделю, не регулярно</option>
+                    <option>III группа (средняя физическая активность) - работники средней тяжести труда или тренировки 2-3 раза в неделю, регулярно</option>
+                    <option>IV группа (высокая физическая активность) - работники тяжелого физического труда или тренировки 3 и более раз в неделю, регулярно.</option>
                 </select>
+                </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <div class="left">
+                    <label>Что бы вы хотели бы сделать с собственным весом?</label>
+                </div>
+                <div class="right">                    
+                    <input type="radio" name="recomFrend" value="1">Похудеть<br>
+                    <input type="radio" name="recomFrend" value="2">Оставить вес прежним<br>
+                    <input type="radio" name="recomFrend" value="3">Увеличить вес
+                </div>
+            </div>
+            <div>
+                <div class="left">
+                    <label>Что вам больше всего нравится в FCC:</label>
+                </div>
+                <div class="right">
+                <select id="dropdown-like" name="like">
+                    <option>Задания</option>
+                    <option>Проекты</option>
+                    <option>Сообщества</option>
+                    <option>Открытый исходный код</option>
+                </select>
+                </div>
+            </div>
+            <div>
+                <div class="left">
+                    <label>Какие вещи (Отметьте все подходящие варианты):</label>
+                </div>
+                <div class="right">
+                    <label><input type="checkbox" value="1">Курите</label><br>
+                <label><input type="checkbox" value="2">Употребляете алкоголь</label><br>
+                <label><input type="checkbox" value="6">Употребляете наркотики</label><br>
+                <label><input type="checkbox" value="3">Нерегулярно питаетесь</label><br>
+                <label><input type="checkbox" value="4">Плотно едите перед сном</label><br>
+                <label><input type="checkbox" value="5">Сон менее 7-8 ч/сутки</label>  
+                </div>
+            </div>
+            <div>
+                <div class="left">
+                    <label>Дополнения, замечания, комментарии, вопросы:</label>
+                </div>
+                <div class="right">
+                <textarea name="comment" placeholder="Введите текст здесь..."></textarea>
+                </div>
+            </div>
+            <div>
+                <div class="left">
+                </div>
+                <div class="right">
+                <div class="right"><input type="submit" id="submit" value="Отправить"></div>   
+                </div>
+            </div>
 
-            <label>* Какова вероятность того, что вы порекомендуете freeCodeCamp другу?</label>       
-            <input type="radio" name="recomFrend" value="1">Definitely
-            <input type="radio" name="recomFrend" value="2">Maybe
-            <input type="radio" name="recomFrend" value="3">Not sure
-
-            <label>Что вам больше всего нравится в FCC:</label>
-            <select id="dropdown-like" name="like">
-                <option>Задания</option>
-                <option>Проекты</option>
-                <option>Сообщества</option>
-                <option>Открытый исходный код</option>
-            </select>
-
-            <label>Вещи, которые должны быть улучшены в будущем<br>
-                (Отметьте все подходящие варианты):</label>
-            <label><input type="checkbox" value="1">Фронтенд проекты</label>
-            <label><input type="checkbox" value="2">Бэкенд проекты</label>
-            <label><input type="checkbox" value="3">Визуализация данных</label>
-            <label><input type="checkbox" value="4">Задания</label>
-            <label><input type="checkbox" value="5">Open Source сообщество</label>
-            <label><input type="checkbox" value="6">Gitter help rooms</label>
-            <label><input type="checkbox" value="7">Видео</label>
-            <label><input type="checkbox" value="9">Вики</label>
-            <label><input type="checkbox" value="10">Форум</label>
-            <label><input type="checkbox" value="11">Дополнительные курсы</label>
-
-            <label>Комментарии или предложения:</label>
-            <textarea name="comment" placeholder="Введите текст здесь..."></textarea>
-
-            <input type="submit" id="submit" value="Отправить">
         </form>
     </body>
 </html>
