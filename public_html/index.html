@@ -4,86 +4,70 @@
     <head>
         <title>Форма опроса</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+
         <h1 id="title">Форма опроса</h1>        
         <form id="survey-form">
             <p id="description">Заполните анкету</p>
-            <div>
-                <div class="left">
-                    <label for="name" id="name-label">*Имя: </label>
-                </div>
-                <div class="right">
-                    <input id="name" type="text" required placeholder="Введите ваше имя">
-                </div>
+            <div class="rovs">                
+                <label for="name" id="name-label" class="left">*Имя: </label> 
+                <input id="name" class="right" type="text" required placeholder="Введите ваше имя">
             </div>
-            <div>
-                <div class="left">
-                    <label for="email" id="email-label">*E-mail: </label>
-                </div>
-                <div class="right">
-                    <input id="email" type="email" required placeholder="Введите вашу электронную почту">
-                </div>
+            <div class="rovs">                
+                <label for="email" id="email-label" class="left">*E-mail: </label> 
+                <input id="email" class="right" type="email" required placeholder="Введите вашу электронную почту">
             </div>
-            <div>
-                <div class="left">
-                    <label for="number" id="number-label">*Возраст: </label>
-                </div>
-                <div class="right">
-                    <input id="number" type="number" required min="1" max="140" placeholder="1">
-                </div>
+            <div class="rovs">                
+                <label for="number" id="number-label" class="left">Возраст: </label>
+                <input id="number" class="right" type="number" min="1" max="140" placeholder="1">
             </div>
-            <div>
-                <div class="left">
-                    <label>* Пол</label>    
-                </div>
+            <div class="rovs">                
+                <label class="left">Пол</label> 
                 <div class="right">
                     <input type="radio" name="gender" value="1">Мужской
                     <input type="radio" name="gender" value="2">Женский
                 </div>
+
             </div>
-            <div>
-                <div class="left">                
-                    <label>Физическая активность (выберите из приведенного списка номер вашей группы): </label>
-                </div>
-                <div class="right">
-                    <select id="dropdown" name="role">
-                        <option>I группа (очень низкая физическая активность) работники преимущественно умственного труда, физические нагрузки отсутствуют</option>
-                        <option>II группа (низкая физическая активность), работники занятые легким трудом или тренировки 1-2 раза в неделю, не регулярно</option>
-                        <option>III группа (средняя физическая активность) - работники средней тяжести труда или тренировки 2-3 раза в неделю, регулярно</option>
-                        <option>IV группа (высокая физическая активность) - работники тяжелого физического труда или тренировки 3 и более раз в неделю, регулярно.</option>
-                    </select>
-                </div>
+            <div class="rovs">
+                <label for="height" class="left">Рост, см: </label>
+                <input id="height" class="right" type="number" required min="1" max="500" placeholder="1">
             </div>
-            <div>
-                <div class="left">
-                    <label>Что бы вы хотели бы сделать с собственным весом?</label>
-                </div>
+            <div class="rovs">
+                <label for="weight" class="left">Вес тела, кг: </label>
+                <input id="weight" class="right" type="number" required min="1" max="300" placeholder="1">
+            </div>
+            <div class="rovs">
+                <label class="left">Физическая активность: </label>
+                <select id="dropdown" class="right" name="role">
+                    <option>I группа (очень низкая физическая активность) работники преимущественно умственного труда, физические нагрузки отсутствуют</option>
+                    <option>II группа (низкая физическая активность), работники занятые легким трудом или тренировки 1-2 раза в неделю, не регулярно</option>
+                    <option>III группа (средняя физическая активность) - работники средней тяжести труда или тренировки 2-3 раза в неделю, регулярно</option>
+                    <option>IV группа (высокая физическая активность) - работники тяжелого физического труда или тренировки 3 и более раз в неделю, регулярно.</option>
+                </select>
+            </div>
+            <div class="rovs">
+                <label class="left">Что бы вы хотели бы сделать с собственным весом?</label>
                 <div class="right">                    
                     <input type="radio" name="recomFrend" value="1">Похудеть<br>
                     <input type="radio" name="recomFrend" value="2">Оставить вес прежним<br>
                     <input type="radio" name="recomFrend" value="3">Увеличить вес
                 </div>
             </div>
-            <div>
-                <div class="left">
-                    <label>Что вам больше всего нравится в FCC:</label>
-                </div>
-                <div class="right">
-                    <select id="dropdown-like" name="like">
-                        <option>Задания</option>
-                        <option>Проекты</option>
-                        <option>Сообщества</option>
-                        <option>Открытый исходный код</option>
-                    </select>
-                </div>
+            <div class="rovs">
+                <label class="left">Что вам больше всего нравится в FCC:</label>
+                <select id="dropdown-like" class="right" name="like">
+                    <option>Задания</option>
+                    <option>Проекты</option>
+                    <option>Сообщества</option>
+                    <option>Открытый исходный код</option>
+                </select>
             </div>
-            <div>
-                <div class="left">
-                    <label>Какие вещи (Отметьте все подходящие варианты):</label>
-                </div>
+            <div class="rovs">
+                <label class="left">Ваши вредные привычки (Отметьте все подходящие варианты):</label>
                 <div class="right">
                     <label><input type="checkbox" value="1">Курите</label><br>
                     <label><input type="checkbox" value="2">Употребляете алкоголь</label><br>
@@ -93,22 +77,18 @@
                     <label><input type="checkbox" value="5">Сон менее 7-8 ч/сутки</label>  
                 </div>
             </div>
-            <div>
-                <div class="left">
-                    <label>Дополнения, замечания, комментарии, вопросы:</label>
-                </div>
-                <div class="right">
-                    <textarea name="comment" placeholder="Введите текст здесь..."></textarea>
-                </div>
-            </div>
-            <div>
-                <div class="left">
-                </div>
-                <div class="right">
-                    <div class="right"><input type="submit" id="submit" value="Отправить"></div>   
-                </div>
+
+            <div class="rovs">                
+                <label class="left">Дополнения, комментарии, вопросы:</label>
+                <textarea class="right" name="comment" placeholder="Введите текст здесь..."></textarea>
+            </div>     
+
+            <div class="rovs"> 
+                <label  class="left"></label>
+                <input type="submit" id="submit" class="right" value="Отправить">
             </div>
 
         </form>
+        <!--<script  type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
     </body>
 </html>

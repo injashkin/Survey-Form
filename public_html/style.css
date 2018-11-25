@@ -10,13 +10,21 @@ and open the template in the editor.
 
 body {
     text-align: center;
-    font-size: 18px;
+    font-size: 1em;
     background-color: #00ddff;
+    font-family: Helvetica, sans-serif;
 }
 
 h1 {
     margin-top: 20px;
 }
+
+.rovs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 option {
     text-align: left;
@@ -31,15 +39,13 @@ form {
 }
 
 .left {    
-    display: inline-block;
     text-align: right;
     width: 45%;
     vertical-align: top;
     padding: 10px 10px 10px 5px;
 }
 
-.right {
-    display: inline-block;
+.right {    
     text-align: left;
     width: 45%;
     padding: 10px 5px 10px 10px;
@@ -56,3 +62,11 @@ p {
 textarea {
     width: 100%;
 }
+
+#submit {    
+    height: 35px;    
+    min-width: 120px;  
+}
+
+
+
