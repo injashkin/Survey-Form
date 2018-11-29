@@ -12,6 +12,7 @@
         <h1 id="title">Форма опроса</h1>        
         <form id="survey-form">
             <p id="description">Заполните анкету</p>
+
             <div class="rovs">                
                 <label for="name" id="name-label" class="left">*Имя: </label> 
                 <input id="name" class="right" type="text" required placeholder="Введите ваше имя">
@@ -20,26 +21,28 @@
                 <label for="email" id="email-label" class="left">*E-mail: </label> 
                 <input id="email" class="right" type="email" required placeholder="Введите вашу электронную почту">
             </div>
+
             <div class="rovs">                
-                <label for="number" id="number-label" class="left">Возраст: </label>
-                <input id="number" class="right" type="number" min="1" max="140" placeholder="1">
-            </div>
-            <div class="rovs">                
-                <label class="left">Пол</label> 
+                <label class="left">Пол: </label> 
                 <div class="right">
                     <input type="radio" name="gender" value="1">Мужской
                     <input type="radio" name="gender" value="2">Женский
                 </div>
+            </div>
 
+            <div class="rovs">                
+                <label for="number" id="number-label" class="left">Возраст: </label>
+                <input id="number" class="right input-number" type="number" min="1" max="140" placeholder="1">
             </div>
             <div class="rovs">
                 <label for="height" class="left">Рост, см: </label>
-                <input id="height" class="right" type="number" required min="1" max="500" placeholder="1">
+                <input id="height" class="right input-number" type="number" min="1" max="500" placeholder="1">
             </div>
             <div class="rovs">
                 <label for="weight" class="left">Вес тела, кг: </label>
-                <input id="weight" class="right" type="number" required min="1" max="300" placeholder="1">
+                <input id="weight" class="right input-number" type="number" min="1" max="300" placeholder="1">
             </div>
+            
             <div class="rovs">
                 <label class="left">Физическая активность: </label>
                 <select id="dropdown" class="right" name="role">
@@ -50,24 +53,16 @@
                 </select>
             </div>
             <div class="rovs">
-                <label class="left">Что бы вы хотели бы сделать с собственным весом?</label>
+                <label class="left">Что бы вы хотели бы сделать с собственным весом? </label>
                 <div class="right">                    
                     <input type="radio" name="recomFrend" value="1">Похудеть<br>
                     <input type="radio" name="recomFrend" value="2">Оставить вес прежним<br>
                     <input type="radio" name="recomFrend" value="3">Увеличить вес
                 </div>
             </div>
+
             <div class="rovs">
-                <label class="left">Что вам больше всего нравится в FCC:</label>
-                <select id="dropdown-like" class="right" name="like">
-                    <option>Задания</option>
-                    <option>Проекты</option>
-                    <option>Сообщества</option>
-                    <option>Открытый исходный код</option>
-                </select>
-            </div>
-            <div class="rovs">
-                <label class="left">Ваши вредные привычки (Отметьте все подходящие варианты):</label>
+                <label class="left">Ваши вредные привычки (отметьте все подходящие варианты): </label>
                 <div class="right">
                     <label><input type="checkbox" value="1">Курите</label><br>
                     <label><input type="checkbox" value="2">Употребляете алкоголь</label><br>
@@ -79,7 +74,7 @@
             </div>
 
             <div class="rovs">                
-                <label class="left">Дополнения, комментарии, вопросы:</label>
+                <label class="left">Дополнения, комментарии, вопросы: </label>
                 <textarea class="right" name="comment" placeholder="Введите текст здесь..."></textarea>
             </div>     
 
